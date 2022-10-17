@@ -9,17 +9,18 @@ import Foundation
 
 class CacheManager {
     
-    let _defaults : UserDefaults
+    private let defaults : UserDefaults
     static let shared = CacheManager()
     
     private init(){
-        _defaults = UserDefaults.standard
+        defaults = UserDefaults.standard
     }
     
-    func saveFavoriteCountry(countryCode: String) -> Bool {
-        
-        return true;
+    func saveFavoriteCountry(countryCode: String) {
+//        defaults.array(forKey: Fav)
+        defaults.set(countryCode, forKey: CacheKeys.favoriteCountries.rawValue)
     }
+
     
     
 }

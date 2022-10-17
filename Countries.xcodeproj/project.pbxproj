@@ -10,12 +10,19 @@
 		A60232B728FC2B2E0046191E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232B628FC2B2E0046191E /* MainScreen.swift */; };
 		A60232BA28FC2F0A0046191E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232B928FC2F0A0046191E /* HomeScreen.swift */; };
 		A60232BC28FC2F3E0046191E /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232BB28FC2F3E0046191E /* FavoritesScreen.swift */; };
+		A60232C028FC6DAB0046191E /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232BF28FC6DAB0046191E /* Countries.swift */; };
+		A60232CC28FC8B570046191E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A60232CB28FC8B570046191E /* Alamofire */; };
+		A60232CF28FC8C870046191E /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232CE28FC8C870046191E /* CountriesService.swift */; };
+		A60232D128FD30F50046191E /* NetworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232D028FD30F50046191E /* NetworkExtension.swift */; };
+		A60232D328FD3C190046191E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232D228FD3C190046191E /* NetworkError.swift */; };
 		A644ED5428FADB1C00399E5F /* CountriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644ED5328FADB1C00399E5F /* CountriesApp.swift */; };
 		A644ED5828FADB1E00399E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644ED5728FADB1E00399E5F /* Assets.xcassets */; };
 		A644ED5B28FADB1E00399E5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644ED5A28FADB1E00399E5F /* Preview Assets.xcassets */; };
 		A644ED6528FADB1E00399E5F /* CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644ED6428FADB1E00399E5F /* CountriesTests.swift */; };
 		A644ED6F28FADB1E00399E5F /* CountriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644ED6E28FADB1E00399E5F /* CountriesUITests.swift */; };
 		A644ED7128FADB1E00399E5F /* CountriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644ED7028FADB1E00399E5F /* CountriesUITestsLaunchTests.swift */; };
+		A65EE94228FD47EF0057CA10 /* FavoritesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EE94128FD47EF0057CA10 /* FavoritesScreenViewModel.swift */; };
+		A65EE94428FD47FF0057CA10 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EE94328FD47FF0057CA10 /* HomeScreenViewModel.swift */; };
 		A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A6E160AD28FC174E0073BF57 /* Kingfisher */; };
 		A6E160B728FC1DC50073BF57 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B628FC1DC50073BF57 /* CacheKeys.swift */; };
 		A6E160BA28FC23B90073BF57 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B928FC23B90073BF57 /* CacheManager.swift */; };
@@ -42,6 +49,10 @@
 		A60232B628FC2B2E0046191E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		A60232B928FC2F0A0046191E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A60232BB28FC2F3E0046191E /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
+		A60232BF28FC6DAB0046191E /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		A60232CE28FC8C870046191E /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		A60232D028FD30F50046191E /* NetworkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtension.swift; sourceTree = "<group>"; };
+		A60232D228FD3C190046191E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A644ED5028FADB1C00399E5F /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644ED5328FADB1C00399E5F /* CountriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesApp.swift; sourceTree = "<group>"; };
 		A644ED5728FADB1E00399E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +62,8 @@
 		A644ED6A28FADB1E00399E5F /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644ED6E28FADB1E00399E5F /* CountriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITests.swift; sourceTree = "<group>"; };
 		A644ED7028FADB1E00399E5F /* CountriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A65EE94128FD47EF0057CA10 /* FavoritesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenViewModel.swift; sourceTree = "<group>"; };
+		A65EE94328FD47FF0057CA10 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		A6E160B628FC1DC50073BF57 /* CacheKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
 		A6E160B928FC23B90073BF57 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */,
+				A60232CC28FC8B570046191E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,28 +95,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A60232B128FC2ABD0046191E /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				A60232B328FC2AD90046191E /* Shared */,
-				A60232B228FC2AD00046191E /* Feature */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
-		A60232B228FC2AD00046191E /* Feature */ = {
+		A60232B228FC2AD00046191E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A60232B428FC2AE60046191E /* MainScreen */,
 			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		A60232B328FC2AD90046191E /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A60232B428FC2AE60046191E /* MainScreen */ = {
@@ -117,10 +115,26 @@
 		A60232B828FC2DB80046191E /* Sub */ = {
 			isa = PBXGroup;
 			children = (
-				A60232B928FC2F0A0046191E /* HomeScreen.swift */,
-				A60232BB28FC2F3E0046191E /* FavoritesScreen.swift */,
+				A65EE94028FD47D80057CA10 /* FavoritesScreen */,
+				A65EE93F28FD47CA0057CA10 /* HomeScreen */,
 			);
 			path = Sub;
+			sourceTree = "<group>";
+		};
+		A60232BE28FC67780046191E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A60232BF28FC6DAB0046191E /* Countries.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A60232CD28FC8C740046191E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A60232CE28FC8C870046191E /* CountriesService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A644ED4728FADB1C00399E5F = {
@@ -146,8 +160,8 @@
 		A644ED5228FADB1C00399E5F /* Countries */ = {
 			isa = PBXGroup;
 			children = (
-				A60232B128FC2ABD0046191E /* Product */,
 				A6E160B028FC1CE90073BF57 /* Core */,
+				A60232B228FC2AD00046191E /* Views */,
 				A6E160AF28FC1A3B0073BF57 /* Resources */,
 				A644ED5328FADB1C00399E5F /* CountriesApp.swift */,
 				A644ED5928FADB1E00399E5F /* Preview Content */,
@@ -180,6 +194,24 @@
 			path = CountriesUITests;
 			sourceTree = "<group>";
 		};
+		A65EE93F28FD47CA0057CA10 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A60232B928FC2F0A0046191E /* HomeScreen.swift */,
+				A65EE94328FD47FF0057CA10 /* HomeScreenViewModel.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		A65EE94028FD47D80057CA10 /* FavoritesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A60232BB28FC2F3E0046191E /* FavoritesScreen.swift */,
+				A65EE94128FD47EF0057CA10 /* FavoritesScreenViewModel.swift */,
+			);
+			path = FavoritesScreen;
+			sourceTree = "<group>";
+		};
 		A6E160AF28FC1A3B0073BF57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +223,8 @@
 		A6E160B028FC1CE90073BF57 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A60232CD28FC8C740046191E /* Service */,
+				A60232BE28FC67780046191E /* Model */,
 				A6E160B828FC23AF0073BF57 /* Manager */,
 				A6E160B228FC1CFA0073BF57 /* Extensions */,
 				A6E160B128FC1CEE0073BF57 /* Enums */,
@@ -202,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				A6E160B628FC1DC50073BF57 /* CacheKeys.swift */,
+				A60232D228FD3C190046191E /* NetworkError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -209,6 +244,7 @@
 		A6E160B228FC1CFA0073BF57 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A60232D028FD30F50046191E /* NetworkExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +275,7 @@
 			name = Countries;
 			packageProductDependencies = (
 				A6E160AD28FC174E0073BF57 /* Kingfisher */,
+				A60232CB28FC8B570046191E /* Alamofire */,
 			);
 			productName = Countries;
 			productReference = A644ED5028FADB1C00399E5F /* Countries.app */;
@@ -314,6 +351,7 @@
 			mainGroup = A644ED4728FADB1C00399E5F;
 			packageReferences = (
 				A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A644ED5128FADB1C00399E5F /* Products */;
 			projectDirPath = "";
@@ -358,11 +396,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60232BC28FC2F3E0046191E /* FavoritesScreen.swift in Sources */,
+				A65EE94428FD47FF0057CA10 /* HomeScreenViewModel.swift in Sources */,
 				A6E160BA28FC23B90073BF57 /* CacheManager.swift in Sources */,
+				A60232D128FD30F50046191E /* NetworkExtension.swift in Sources */,
 				A60232BA28FC2F0A0046191E /* HomeScreen.swift in Sources */,
 				A60232B728FC2B2E0046191E /* MainScreen.swift in Sources */,
+				A60232CF28FC8C870046191E /* CountriesService.swift in Sources */,
 				A644ED5428FADB1C00399E5F /* CountriesApp.swift in Sources */,
+				A65EE94228FD47EF0057CA10 /* FavoritesScreenViewModel.swift in Sources */,
+				A60232C028FC6DAB0046191E /* Countries.swift in Sources */,
 				A6E160B728FC1DC50073BF57 /* CacheKeys.swift in Sources */,
+				A60232D328FD3C190046191E /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -503,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -527,6 +571,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +601,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,6 +735,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -700,6 +754,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A60232CB28FC8B570046191E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		A6E160AD28FC174E0073BF57 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */;
