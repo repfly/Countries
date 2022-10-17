@@ -6,3 +6,6 @@
 //
 
 import Foundation
+enum CacheKeys : String {
+    case favoriteCountries = "favoriteCountries";
+}
