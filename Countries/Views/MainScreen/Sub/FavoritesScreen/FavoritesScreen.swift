@@ -8,21 +8,28 @@
 import SwiftUI
 
 struct FavoritesScreen: View {
-    @StateObject fileprivate var viewModel = FavoritesViewModel()
-    
+    @State var favoriteCountries = [Country]()
+    @State var isFetched: Bool = false
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    ForEach(viewModel.favoriteCountries, id: \.code) { country in
+                    if favoriteCountries.isEmpty && isFetched {
+                        Text("No favorite countries. You can add one from home screen!")
+                            .font(.body)
+                    }
+                    ForEach(favoriteCountries, id: \.code) { country in
                         CountryCard(country: country)
                     }
                 }
                 .padding()
-                .animation(.easeIn, value: viewModel.favoriteCountries)
+                .animation(.easeIn, value: favoriteCountries)
             }
+            .navigationTitle("Countries")
+            .navigationBarTitleDisplayMode(.inline)
             .task {
-                viewModel.getFavoriteCountries()
+                favoriteCountries = CacheManager.shared.getFavoriteCountries()
+                isFetched = true
             }
         }
     }
