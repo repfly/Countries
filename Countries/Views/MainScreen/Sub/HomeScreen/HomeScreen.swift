@@ -15,9 +15,7 @@ struct HomeScreen: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(viewModel.countries, id: \.code) { country in
-                        NavigationLink(destination: CountryDetailView(countryCode: country.code)) {
-                            CountryCard(country: country)
-                        }
+                        CountryCard(country: country)
                     }
                 }
                 .padding()
@@ -28,7 +26,6 @@ struct HomeScreen: View {
             }
             .navigationTitle("Countries")
             .navigationBarTitleDisplayMode(.inline)
-            
         }
     }
 }

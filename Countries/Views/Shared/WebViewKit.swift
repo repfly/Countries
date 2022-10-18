@@ -7,7 +7,8 @@
 
 import SwiftUI
 import WebKit
- 
+
+/// Helper view to present webview from bottom sheet.
 struct WebView: UIViewRepresentable {
  
     var url: URL
