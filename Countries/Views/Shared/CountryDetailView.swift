@@ -9,10 +9,18 @@ import SwiftUI
 import SVGView
 
 struct CountryDetailView: View {
-    @State var countryDetail: CountryDetail?
+    
     let countryCode: String
+    
     @State private var showWebView = false
-    let placeHolderFlag: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vlag_ontbreekt.svg/2560px-Vlag_ontbreekt.svg.png"
+    @State var countryDetail: CountryDetail?
+    
+    fileprivate let placeHolderFlag: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vlag_ontbreekt.svg/2560px-Vlag_ontbreekt.svg.png"
+    
+   
+    
+   
+    
     var body: some View {
         VStack(alignment: .leading) {
             SVGView(contentsOf: URL(string: countryDetail?.data.flagImageURI ?? placeHolderFlag)!)
@@ -45,7 +53,6 @@ struct CountryDetailView: View {
                 switch response {
                 case .success(let detail):
                     self.countryDetail = detail
-                    print(detail)
                     break
                     
                 case .failure(let error):

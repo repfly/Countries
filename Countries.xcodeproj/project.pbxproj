@@ -11,7 +11,6 @@
 		A60232BA28FC2F0A0046191E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232B928FC2F0A0046191E /* HomeScreen.swift */; };
 		A60232BC28FC2F3E0046191E /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232BB28FC2F3E0046191E /* FavoritesScreen.swift */; };
 		A60232C028FC6DAB0046191E /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232BF28FC6DAB0046191E /* Countries.swift */; };
-		A60232CC28FC8B570046191E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A60232CB28FC8B570046191E /* Alamofire */; };
 		A60232CF28FC8C870046191E /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232CE28FC8C870046191E /* CountriesService.swift */; };
 		A60232D128FD30F50046191E /* NetworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232D028FD30F50046191E /* NetworkExtension.swift */; };
 		A60232D328FD3C190046191E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60232D228FD3C190046191E /* NetworkError.swift */; };
@@ -30,7 +29,6 @@
 		A6C54BD228FE8C1A00F3681E /* ScreenSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD128FE8C1A00F3681E /* ScreenSizeExtension.swift */; };
 		A6C54BD428FE8D5800F3681E /* FavoriteIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD328FE8D5800F3681E /* FavoriteIconButton.swift */; };
 		A6C54BD628FEBF2A00F3681E /* WebViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD528FEBF2A00F3681E /* WebViewKit.swift */; };
-		A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A6E160AD28FC174E0073BF57 /* Kingfisher */; };
 		A6E160B728FC1DC50073BF57 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B628FC1DC50073BF57 /* CacheKeys.swift */; };
 		A6E160BA28FC23B90073BF57 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B928FC23B90073BF57 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
@@ -87,8 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C54BD028FE88A700F3681E /* SVGView in Frameworks */,
-				A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */,
-				A60232CC28FC8B570046191E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +306,6 @@
 			);
 			name = Countries;
 			packageProductDependencies = (
-				A6E160AD28FC174E0073BF57 /* Kingfisher */,
-				A60232CB28FC8B570046191E /* Alamofire */,
 				A6C54BCF28FE88A700F3681E /* SVGView */,
 			);
 			productName = Countries;
@@ -387,8 +381,6 @@
 			);
 			mainGroup = A644ED4728FADB1C00399E5F;
 			packageReferences = (
-				A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */,
 			);
 			productRefGroup = A644ED5128FADB1C00399E5F /* Products */;
@@ -779,14 +771,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/exyte/SVGView.git";
@@ -795,31 +779,13 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A60232CB28FC8B570046191E /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		A6C54BCF28FE88A700F3681E /* SVGView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */;
 			productName = SVGView;
-		};
-		A6E160AD28FC174E0073BF57 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
