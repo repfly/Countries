@@ -16,11 +16,7 @@ struct CountryDetailView: View {
     @State var countryDetail: CountryDetail?
     
     fileprivate let placeHolderFlag: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vlag_ontbreekt.svg/2560px-Vlag_ontbreekt.svg.png"
-    
-   
-    
-   
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             SVGView(contentsOf: URL(string: countryDetail?.data.flagImageURI ?? placeHolderFlag)!)
@@ -38,7 +34,7 @@ struct CountryDetailView: View {
             .buttonStyle(.borderedProminent)
             .padding(.leading, 48)
             .sheet(isPresented: $showWebView) {
-                WebView(url: URL(string: "https://www.wikidata.org/wiki/\(countryDetail?.data.wikiDataID ?? "")")!)
+                 WebView(url: URL(string: "https://www.wikidata.org/wiki/\(countryDetail?.data.wikiDataID ?? "")")!)
             }
             Spacer()
         }
