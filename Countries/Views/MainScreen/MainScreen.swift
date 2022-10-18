@@ -22,6 +22,7 @@ struct MainScreen: View {
                     Image(systemName: "heart.fill")
                     Text("Saved")
                 }
+                
         }
     }
 }

@@ -23,6 +23,13 @@
 		A644ED7128FADB1E00399E5F /* CountriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644ED7028FADB1E00399E5F /* CountriesUITestsLaunchTests.swift */; };
 		A65EE94228FD47EF0057CA10 /* FavoritesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EE94128FD47EF0057CA10 /* FavoritesScreenViewModel.swift */; };
 		A65EE94428FD47FF0057CA10 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EE94328FD47FF0057CA10 /* HomeScreenViewModel.swift */; };
+		A68D3C0E28FD973700121844 /* CountryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D3C0D28FD973700121844 /* CountryCard.swift */; };
+		A6C54BC828FDE2E800F3681E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BC728FDE2E800F3681E /* CountryDetailView.swift */; };
+		A6C54BCA28FDE6F900F3681E /* CountryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BC928FDE6F900F3681E /* CountryDetail.swift */; };
+		A6C54BD028FE88A700F3681E /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = A6C54BCF28FE88A700F3681E /* SVGView */; };
+		A6C54BD228FE8C1A00F3681E /* ScreenSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD128FE8C1A00F3681E /* ScreenSizeExtension.swift */; };
+		A6C54BD428FE8D5800F3681E /* FavoriteIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD328FE8D5800F3681E /* FavoriteIconButton.swift */; };
+		A6C54BD628FEBF2A00F3681E /* WebViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C54BD528FEBF2A00F3681E /* WebViewKit.swift */; };
 		A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A6E160AD28FC174E0073BF57 /* Kingfisher */; };
 		A6E160B728FC1DC50073BF57 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B628FC1DC50073BF57 /* CacheKeys.swift */; };
 		A6E160BA28FC23B90073BF57 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E160B928FC23B90073BF57 /* CacheManager.swift */; };
@@ -64,6 +71,12 @@
 		A644ED7028FADB1E00399E5F /* CountriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A65EE94128FD47EF0057CA10 /* FavoritesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenViewModel.swift; sourceTree = "<group>"; };
 		A65EE94328FD47FF0057CA10 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		A68D3C0D28FD973700121844 /* CountryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCard.swift; sourceTree = "<group>"; };
+		A6C54BC728FDE2E800F3681E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		A6C54BC928FDE6F900F3681E /* CountryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
+		A6C54BD128FE8C1A00F3681E /* ScreenSizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizeExtension.swift; sourceTree = "<group>"; };
+		A6C54BD328FE8D5800F3681E /* FavoriteIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteIconButton.swift; sourceTree = "<group>"; };
+		A6C54BD528FEBF2A00F3681E /* WebViewKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewKit.swift; sourceTree = "<group>"; };
 		A6E160B628FC1DC50073BF57 /* CacheKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
 		A6E160B928FC23B90073BF57 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C54BD028FE88A700F3681E /* SVGView in Frameworks */,
 				A6E160AE28FC174E0073BF57 /* Kingfisher in Frameworks */,
 				A60232CC28FC8B570046191E /* Alamofire in Frameworks */,
 			);
@@ -98,6 +112,7 @@
 		A60232B228FC2AD00046191E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6C54BC628FDE2DA00F3681E /* Shared */,
 				A60232B428FC2AE60046191E /* MainScreen */,
 			);
 			path = Views;
@@ -106,6 +121,7 @@
 		A60232B428FC2AE60046191E /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A68D3C0C28FD972300121844 /* Components */,
 				A60232B828FC2DB80046191E /* Sub */,
 				A60232B628FC2B2E0046191E /* MainScreen.swift */,
 			);
@@ -125,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A60232BF28FC6DAB0046191E /* Countries.swift */,
+				A6C54BC928FDE6F900F3681E /* CountryDetail.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -212,6 +229,24 @@
 			path = FavoritesScreen;
 			sourceTree = "<group>";
 		};
+		A68D3C0C28FD972300121844 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A68D3C0D28FD973700121844 /* CountryCard.swift */,
+				A6C54BD328FE8D5800F3681E /* FavoriteIconButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A6C54BC628FDE2DA00F3681E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A6C54BC728FDE2E800F3681E /* CountryDetailView.swift */,
+				A6C54BD528FEBF2A00F3681E /* WebViewKit.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		A6E160AF28FC1A3B0073BF57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				A60232D028FD30F50046191E /* NetworkExtension.swift */,
+				A6C54BD128FE8C1A00F3681E /* ScreenSizeExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +312,7 @@
 			packageProductDependencies = (
 				A6E160AD28FC174E0073BF57 /* Kingfisher */,
 				A60232CB28FC8B570046191E /* Alamofire */,
+				A6C54BCF28FE88A700F3681E /* SVGView */,
 			);
 			productName = Countries;
 			productReference = A644ED5028FADB1C00399E5F /* Countries.app */;
@@ -352,6 +389,7 @@
 			packageReferences = (
 				A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */,
 			);
 			productRefGroup = A644ED5128FADB1C00399E5F /* Products */;
 			projectDirPath = "";
@@ -403,9 +441,15 @@
 				A60232B728FC2B2E0046191E /* MainScreen.swift in Sources */,
 				A60232CF28FC8C870046191E /* CountriesService.swift in Sources */,
 				A644ED5428FADB1C00399E5F /* CountriesApp.swift in Sources */,
+				A6C54BD228FE8C1A00F3681E /* ScreenSizeExtension.swift in Sources */,
 				A65EE94228FD47EF0057CA10 /* FavoritesScreenViewModel.swift in Sources */,
+				A6C54BD628FEBF2A00F3681E /* WebViewKit.swift in Sources */,
 				A60232C028FC6DAB0046191E /* Countries.swift in Sources */,
+				A6C54BD428FE8D5800F3681E /* FavoriteIconButton.swift in Sources */,
+				A6C54BCA28FDE6F900F3681E /* CountryDetail.swift in Sources */,
 				A6E160B728FC1DC50073BF57 /* CacheKeys.swift in Sources */,
+				A6C54BC828FDE2E800F3681E /* CountryDetailView.swift in Sources */,
+				A68D3C0E28FD973700121844 /* CountryCard.swift in Sources */,
 				A60232D328FD3C190046191E /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,6 +787,14 @@
 				kind = branch;
 			};
 		};
+		A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/SVGView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		A6E160AC28FC174E0073BF57 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -758,6 +810,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A60232CA28FC8B570046191E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		A6C54BCF28FE88A700F3681E /* SVGView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C54BCE28FE88A700F3681E /* XCRemoteSwiftPackageReference "SVGView" */;
+			productName = SVGView;
 		};
 		A6E160AD28FC174E0073BF57 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

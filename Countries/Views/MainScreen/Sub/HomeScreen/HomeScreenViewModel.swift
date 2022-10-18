@@ -16,8 +16,9 @@ class HomeScreenViewModel : ObservableObject {
          CountriesService.shared.fetchCountries(){ countries in
              switch countries {
              case .success(let countries):
-                 self.countries = countries.data
-                 print(self.countries)
+                 DispatchQueue.main.async {
+                     self.countries = countries.data
+                 }
                  break
                  
              case .failure(let error):

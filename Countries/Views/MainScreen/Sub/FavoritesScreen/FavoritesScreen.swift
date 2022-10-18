@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct FavoritesScreen: View {
+    @StateObject fileprivate var viewModel = FavoritesViewModel()
+
     var body: some View {
-        Text("home")
-        
-        
+        ScrollView {
+            VStack(alignment: .leading) {
+                ForEach(viewModel.favoriteCountries, id: \.code) { country in
+                    CountryCard(country: country)
+                }
+            }
+            .padding()
+            .animation(.easeIn, value: viewModel.favoriteCountries)
+        }
+        .task {
+            viewModel.getFavoriteCountries()
+        }
     }
 }
 

@@ -11,51 +11,25 @@ struct HomeScreen: View {
     @StateObject fileprivate var viewModel = HomeScreenViewModel()
     
     var body: some View {
-        
-        ScrollView {
-              VStack(alignment: .leading) {
-                  ForEach(viewModel.countries, id: \.code) { country in
-                      CountryCard(country: country)
-                  }
-              }
-              .padding()
-                  .edgesIgnoringSafeArea(.bottom)
-                  .animation(.easeIn, value: viewModel.countries)
-        }.task {
-            viewModel.fetchCountries()
-        }.refreshable {
-            viewModel.fetchCountries()
-        }
-        
-      
-    }
-}
-
-
-struct CountryCard: View {
-    let isFilled: Bool = false;
-    let country: Country
-    
-    var body: some View {
-        HStack {
-            Text(country.name)
-                .padding()
-            
-            Spacer()
-            
-            Image(systemName: isFilled ? "star.fill" :  "star")
-                .imageScale(.large)
-                .padding()
-                .foregroundColor(Color.black)
-                .onTapGesture {
-                    print("ontap")
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(viewModel.countries, id: \.code) { country in
+                        NavigationLink(destination: CountryDetailView(countryCode: country.code)) {
+                            CountryCard(country: country)
+                        }
+                    }
                 }
+                .padding()
+                .animation(.easeIn, value: viewModel.countries)
+            }
+            .task {
+                viewModel.fetchCountries()
+            }
+            .navigationTitle("Countries")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
-        .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(.black, lineWidth: 4)
-        )
-        .padding()
     }
 }
 

@@ -27,6 +27,8 @@ extension URLSession {
         
         
         let task = dataTask(with: request){ data, response, error in
+            
+            
             guard let data = data else {
                 if let error = error {
                     completion(.failure(error))
