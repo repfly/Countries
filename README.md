@@ -13,7 +13,7 @@
 
 ## About
 
-This repository contains an iOS film browser project that utilizes reactive and modern components.
+This repository contains an iOS case project created with SwiftUI.
 
 ### Discussion
 I know there are some weird choices in the project. First of all, why not use Core Data to store objects? Well, I've tried to keep the overall logical complexity low and even it is not a good practice, it was fun to implement. Another criticism that can be made for using an extension to make HTTP requests. And the point that I'm trying to make before is valid in here too. Because it will not be a commercial app that consumes the hell out of REST, implementing a simple generic extension does makes sense (to me at least) rather than multilayer protocol orianted network architectures. 
